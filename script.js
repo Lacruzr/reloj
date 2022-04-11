@@ -7,9 +7,9 @@ function reloj() {
 	segundos = time.getSeconds();
     
     if (horas >= 12) {
-     	porcentajeHoras = horas / 12 * 360;
+     	porcentajeHoras = ( horas - 12) / 12 * 360;
     }  else {
-    	porcentajeHoras = horas / 24 * 360;
+    	porcentajeHoras = (horas / 12) * 360;
     }
 
     porcentajeHoras += minutos / 60 * 30;
